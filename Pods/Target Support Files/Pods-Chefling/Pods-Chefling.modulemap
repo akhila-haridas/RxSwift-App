@@ -1,0 +1,6 @@
+framework module Pods_Chefling {
+  umbrella header "Pods-Chefling-umbrella.h"
+
+  export *
+  module * { export * }
+}

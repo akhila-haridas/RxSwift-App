@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15962543223A76ED00AB6622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962542223A76ED00AB6622 /* AppDelegate.swift */; };
+		15962545223A76ED00AB6622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962544223A76ED00AB6622 /* ViewController.swift */; };
+		15962548223A76ED00AB6622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15962546223A76ED00AB6622 /* Main.storyboard */; };
+		1596254B223A76ED00AB6622 /* Chefling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15962549223A76ED00AB6622 /* Chefling.xcdatamodeld */; };
+		1596254D223A76EF00AB6622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1596254C223A76EF00AB6622 /* Assets.xcassets */; };
+		15962550223A76EF00AB6622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1596254E223A76EF00AB6622 /* LaunchScreen.storyboard */; };
+		1596255B223A76EF00AB6622 /* CheflingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596255A223A76EF00AB6622 /* CheflingTests.swift */; };
+		15962566223A76EF00AB6622 /* CheflingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962565223A76EF00AB6622 /* CheflingUITests.swift */; };
+		15962575223A77CF00AB6622 /* RecipeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15962574223A77CF00AB6622 /* RecipeHeaderView.xib */; };
+		15962577223A795100AB6622 /* RecipeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962576223A795100AB6622 /* RecipeHeaderView.swift */; };
+		1596257D223ABB4800AB6622 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596257C223ABB4800AB6622 /* Models.swift */; };
+		15962580223ABE7200AB6622 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596257F223ABE7200AB6622 /* APIClient.swift */; };
+		15962583223B61C300AB6622 /* IngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962582223B61C300AB6622 /* IngredientsTableViewCell.swift */; };
+		15962586223B629300AB6622 /* IngredientCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962585223B629300AB6622 /* IngredientCellViewModel.swift */; };
+		15962588223B656B00AB6622 /* IngredientsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962587223B656B00AB6622 /* IngredientsTableViewModel.swift */; };
+		1596258A223B95E600AB6622 /* RecipeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15962589223B95E600AB6622 /* RecipeFooterView.xib */; };
+		1596258C223B969100AB6622 /* RecipeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596258B223B969100AB6622 /* RecipeFooterView.swift */; };
+		1596258F223B9E6B00AB6622 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596258E223B9E6B00AB6622 /* Utils.swift */; };
+		15962592223BA81A00AB6622 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962591223BA81A00AB6622 /* Extensions.swift */; };
+		15962598223BC59400AB6622 /* chef.png in Resources */ = {isa = PBXBuildFile; fileRef = 15962597223BC59400AB6622 /* chef.png */; };
+		1596259E223BD9CC00AB6622 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596259D223BD9CC00AB6622 /* Constants.swift */; };
+		AC13626A79E72ACE30E76E89 /* Pods_Chefling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D24ABEF44A459BA0F837678 /* Pods_Chefling.framework */; };
+		B771F847FFC803F5C47520B6 /* Pods_CheflingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635CCB5869903DE89A0B1EC4 /* Pods_CheflingUITests.framework */; };
+		EA858C0D51BAD46CC24E3F10 /* Pods_CheflingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F5E151976A64D11B893163 /* Pods_CheflingTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15962557223A76EF00AB6622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15962537223A76ED00AB6622 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1596253E223A76ED00AB6622;
+			remoteInfo = Chefling;
+		};
+		15962562223A76EF00AB6622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15962537223A76ED00AB6622 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1596253E223A76ED00AB6622;
+			remoteInfo = Chefling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D24ABEF44A459BA0F837678 /* Pods_Chefling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chefling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F5E151976A64D11B893163 /* Pods_CheflingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheflingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1596253F223A76ED00AB6622 /* Chefling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chefling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15962542223A76ED00AB6622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15962544223A76ED00AB6622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15962547223A76ED00AB6622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1596254A223A76ED00AB6622 /* Chefling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chefling.xcdatamodel; sourceTree = "<group>"; };
+		1596254C223A76EF00AB6622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1596254F223A76EF00AB6622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15962551223A76EF00AB6622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15962556223A76EF00AB6622 /* CheflingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheflingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1596255A223A76EF00AB6622 /* CheflingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheflingTests.swift; sourceTree = "<group>"; };
+		1596255C223A76EF00AB6622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15962561223A76EF00AB6622 /* CheflingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheflingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15962565223A76EF00AB6622 /* CheflingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheflingUITests.swift; sourceTree = "<group>"; };
+		15962567223A76EF00AB6622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15962574223A77CF00AB6622 /* RecipeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeHeaderView.xib; sourceTree = "<group>"; };
+		15962576223A795100AB6622 /* RecipeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeaderView.swift; sourceTree = "<group>"; };
+		1596257C223ABB4800AB6622 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1596257F223ABE7200AB6622 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		15962582223B61C300AB6622 /* IngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewCell.swift; sourceTree = "<group>"; };
+		15962585223B629300AB6622 /* IngredientCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCellViewModel.swift; sourceTree = "<group>"; };
+		15962587223B656B00AB6622 /* IngredientsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewModel.swift; sourceTree = "<group>"; };
+		15962589223B95E600AB6622 /* RecipeFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeFooterView.xib; sourceTree = "<group>"; };
+		1596258B223B969100AB6622 /* RecipeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFooterView.swift; sourceTree = "<group>"; };
+		1596258E223B9E6B00AB6622 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		15962591223BA81A00AB6622 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		15962597223BC59400AB6622 /* chef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chef.png; sourceTree = "<group>"; };
+		1596259D223BD9CC00AB6622 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		164EBAEF2F5776263172E765 /* Pods-Chefling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chefling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chefling/Pods-Chefling.debug.xcconfig"; sourceTree = "<group>"; };
+		19DFE4CD8A950D0F4FA9EC33 /* Pods-Chefling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chefling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chefling/Pods-Chefling.release.xcconfig"; sourceTree = "<group>"; };
+		2D80A28949F7767D4E0CECF0 /* Pods-CheflingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheflingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheflingTests/Pods-CheflingTests.release.xcconfig"; sourceTree = "<group>"; };
+		635CCB5869903DE89A0B1EC4 /* Pods_CheflingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheflingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875B09327D7D41607D3F358A /* Pods-CheflingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheflingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheflingUITests/Pods-CheflingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		988836C754359F51C64167B3 /* Pods-CheflingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheflingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheflingTests/Pods-CheflingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5FBD19A8A8F57B720B44B78 /* Pods-CheflingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheflingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheflingUITests/Pods-CheflingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1596253C223A76ED00AB6622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC13626A79E72ACE30E76E89 /* Pods_Chefling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15962553223A76EF00AB6622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA858C0D51BAD46CC24E3F10 /* Pods_CheflingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1596255E223A76EF00AB6622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B771F847FFC803F5C47520B6 /* Pods_CheflingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15962536223A76ED00AB6622 = {
+			isa = PBXGroup;
+			children = (
+				15962541223A76ED00AB6622 /* Chefling */,
+				15962559223A76EF00AB6622 /* CheflingTests */,
+				15962564223A76EF00AB6622 /* CheflingUITests */,
+				15962540223A76ED00AB6622 /* Products */,
+				6A1DB56D7B45C76FE426685F /* Pods */,
+				4D9C404034383185056F4D50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15962540223A76ED00AB6622 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1596253F223A76ED00AB6622 /* Chefling.app */,
+				15962556223A76EF00AB6622 /* CheflingTests.xctest */,
+				15962561223A76EF00AB6622 /* CheflingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15962541223A76ED00AB6622 /* Chefling */ = {
+			isa = PBXGroup;
+			children = (
+				15962590223B9FF300AB6622 /* Extensions */,
+				1596258D223B9E5800AB6622 /* Utilities */,
+				15962584223B626C00AB6622 /* ViewModel */,
+				15962581223B61A700AB6622 /* View */,
+				1596257E223ABE5300AB6622 /* Service */,
+				1596257B223ABB2500AB6622 /* Model */,
+				15962578223A7DDF00AB6622 /* Image */,
+				15962573223A779400AB6622 /* Xib */,
+				15962542223A76ED00AB6622 /* AppDelegate.swift */,
+				15962544223A76ED00AB6622 /* ViewController.swift */,
+				15962546223A76ED00AB6622 /* Main.storyboard */,
+				1596254C223A76EF00AB6622 /* Assets.xcassets */,
+				1596254E223A76EF00AB6622 /* LaunchScreen.storyboard */,
+				15962551223A76EF00AB6622 /* Info.plist */,
+				15962549223A76ED00AB6622 /* Chefling.xcdatamodeld */,
+			);
+			path = Chefling;
+			sourceTree = "<group>";
+		};
+		15962559223A76EF00AB6622 /* CheflingTests */ = {
+			isa = PBXGroup;
+			children = (
+				1596255A223A76EF00AB6622 /* CheflingTests.swift */,
+				1596255C223A76EF00AB6622 /* Info.plist */,
+			);
+			path = CheflingTests;
+			sourceTree = "<group>";
+		};
+		15962564223A76EF00AB6622 /* CheflingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15962565223A76EF00AB6622 /* CheflingUITests.swift */,
+				15962567223A76EF00AB6622 /* Info.plist */,
+			);
+			path = CheflingUITests;
+			sourceTree = "<group>";
+		};
+		15962573223A779400AB6622 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				15962574223A77CF00AB6622 /* RecipeHeaderView.xib */,
+				15962576223A795100AB6622 /* RecipeHeaderView.swift */,
+				15962589223B95E600AB6622 /* RecipeFooterView.xib */,
+				1596258B223B969100AB6622 /* RecipeFooterView.swift */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		15962578223A7DDF00AB6622 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				15962597223BC59400AB6622 /* chef.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		1596257B223ABB2500AB6622 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1596257C223ABB4800AB6622 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1596257E223ABE5300AB6622 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1596257F223ABE7200AB6622 /* APIClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		15962581223B61A700AB6622 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15962582223B61C300AB6622 /* IngredientsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15962584223B626C00AB6622 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15962585223B629300AB6622 /* IngredientCellViewModel.swift */,
+				15962587223B656B00AB6622 /* IngredientsTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1596258D223B9E5800AB6622 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1596258E223B9E6B00AB6622 /* Utils.swift */,
+				1596259D223BD9CC00AB6622 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		15962590223B9FF300AB6622 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15962591223BA81A00AB6622 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D9C404034383185056F4D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D24ABEF44A459BA0F837678 /* Pods_Chefling.framework */,
+				12F5E151976A64D11B893163 /* Pods_CheflingTests.framework */,
+				635CCB5869903DE89A0B1EC4 /* Pods_CheflingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A1DB56D7B45C76FE426685F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				164EBAEF2F5776263172E765 /* Pods-Chefling.debug.xcconfig */,
+				19DFE4CD8A950D0F4FA9EC33 /* Pods-Chefling.release.xcconfig */,
+				988836C754359F51C64167B3 /* Pods-CheflingTests.debug.xcconfig */,
+				2D80A28949F7767D4E0CECF0 /* Pods-CheflingTests.release.xcconfig */,
+				D5FBD19A8A8F57B720B44B78 /* Pods-CheflingUITests.debug.xcconfig */,
+				875B09327D7D41607D3F358A /* Pods-CheflingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1596253E223A76ED00AB6622 /* Chefling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1596256A223A76F000AB6622 /* Build configuration list for PBXNativeTarget "Chefling" */;
+			buildPhases = (
+				FFC26567259F3F988E5938A9 /* [CP] Check Pods Manifest.lock */,
+				1596253B223A76ED00AB6622 /* Sources */,
+				1596253C223A76ED00AB6622 /* Frameworks */,
+				1596253D223A76ED00AB6622 /* Resources */,
+				5CEDE235A106F05775555D67 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chefling;
+			productName = Chefling;
+			productReference = 1596253F223A76ED00AB6622 /* Chefling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15962555223A76EF00AB6622 /* CheflingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1596256D223A76F000AB6622 /* Build configuration list for PBXNativeTarget "CheflingTests" */;
+			buildPhases = (
+				147477654F55A65618D011AE /* [CP] Check Pods Manifest.lock */,
+				15962552223A76EF00AB6622 /* Sources */,
+				15962553223A76EF00AB6622 /* Frameworks */,
+				15962554223A76EF00AB6622 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15962558223A76EF00AB6622 /* PBXTargetDependency */,
+			);
+			name = CheflingTests;
+			productName = CheflingTests;
+			productReference = 15962556223A76EF00AB6622 /* CheflingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15962560223A76EF00AB6622 /* CheflingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15962570223A76F000AB6622 /* Build configuration list for PBXNativeTarget "CheflingUITests" */;
+			buildPhases = (
+				276735C523CF646046F2530D /* [CP] Check Pods Manifest.lock */,
+				1596255D223A76EF00AB6622 /* Sources */,
+				1596255E223A76EF00AB6622 /* Frameworks */,
+				1596255F223A76EF00AB6622 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15962563223A76EF00AB6622 /* PBXTargetDependency */,
+			);
+			name = CheflingUITests;
+			productName = CheflingUITests;
+			productReference = 15962561223A76EF00AB6622 /* CheflingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15962537223A76ED00AB6622 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Akhila Haridas";
+				TargetAttributes = {
+					1596253E223A76ED00AB6622 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					15962555223A76EF00AB6622 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1596253E223A76ED00AB6622;
+					};
+					15962560223A76EF00AB6622 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1596253E223A76ED00AB6622;
+					};
+				};
+			};
+			buildConfigurationList = 1596253A223A76ED00AB6622 /* Build configuration list for PBXProject "Chefling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15962536223A76ED00AB6622;
+			productRefGroup = 15962540223A76ED00AB6622 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1596253E223A76ED00AB6622 /* Chefling */,
+				15962555223A76EF00AB6622 /* CheflingTests */,
+				15962560223A76EF00AB6622 /* CheflingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1596253D223A76ED00AB6622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15962598223BC59400AB6622 /* chef.png in Resources */,
+				1596258A223B95E600AB6622 /* RecipeFooterView.xib in Resources */,
+				15962550223A76EF00AB6622 /* LaunchScreen.storyboard in Resources */,
+				15962575223A77CF00AB6622 /* RecipeHeaderView.xib in Resources */,
+				1596254D223A76EF00AB6622 /* Assets.xcassets in Resources */,
+				15962548223A76ED00AB6622 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15962554223A76EF00AB6622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1596255F223A76EF00AB6622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147477654F55A65618D011AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheflingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		276735C523CF646046F2530D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheflingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CEDE235A106F05775555D67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chefling/Pods-Chefling-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chefling/Pods-Chefling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC26567259F3F988E5938A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chefling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1596253B223A76ED00AB6622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15962545223A76ED00AB6622 /* ViewController.swift in Sources */,
+				15962588223B656B00AB6622 /* IngredientsTableViewModel.swift in Sources */,
+				15962577223A795100AB6622 /* RecipeHeaderView.swift in Sources */,
+				1596258C223B969100AB6622 /* RecipeFooterView.swift in Sources */,
+				1596254B223A76ED00AB6622 /* Chefling.xcdatamodeld in Sources */,
+				15962543223A76ED00AB6622 /* AppDelegate.swift in Sources */,
+				15962583223B61C300AB6622 /* IngredientsTableViewCell.swift in Sources */,
+				1596259E223BD9CC00AB6622 /* Constants.swift in Sources */,
+				15962592223BA81A00AB6622 /* Extensions.swift in Sources */,
+				1596258F223B9E6B00AB6622 /* Utils.swift in Sources */,
+				15962586223B629300AB6622 /* IngredientCellViewModel.swift in Sources */,
+				1596257D223ABB4800AB6622 /* Models.swift in Sources */,
+				15962580223ABE7200AB6622 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15962552223A76EF00AB6622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1596255B223A76EF00AB6622 /* CheflingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1596255D223A76EF00AB6622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15962566223A76EF00AB6622 /* CheflingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15962558223A76EF00AB6622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1596253E223A76ED00AB6622 /* Chefling */;
+			targetProxy = 15962557223A76EF00AB6622 /* PBXContainerItemProxy */;
+		};
+		15962563223A76EF00AB6622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1596253E223A76ED00AB6622 /* Chefling */;
+			targetProxy = 15962562223A76EF00AB6622 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15962546223A76ED00AB6622 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15962547223A76ED00AB6622 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1596254E223A76EF00AB6622 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1596254F223A76EF00AB6622 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15962568223A76F000AB6622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15962569223A76F000AB6622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1596256B223A76F000AB6622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164EBAEF2F5776263172E765 /* Pods-Chefling.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JARK93NXB;
+				INFOPLIST_FILE = Chefling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akhila.Chefling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1596256C223A76F000AB6622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DFE4CD8A950D0F4FA9EC33 /* Pods-Chefling.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JARK93NXB;
+				INFOPLIST_FILE = Chefling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akhila.Chefling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1596256E223A76F000AB6622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988836C754359F51C64167B3 /* Pods-CheflingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheflingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akhila.CheflingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chefling.app/Chefling";
+			};
+			name = Debug;
+		};
+		1596256F223A76F000AB6622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D80A28949F7767D4E0CECF0 /* Pods-CheflingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheflingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akhila.CheflingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chefling.app/Chefling";
+			};
+			name = Release;
+		};
+		15962571223A76F000AB6622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FBD19A8A8F57B720B44B78 /* Pods-CheflingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheflingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akhila.CheflingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chefling;
+			};
+			name = Debug;
+		};
+		15962572223A76F000AB6622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875B09327D7D41607D3F358A /* Pods-CheflingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheflingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akhila.CheflingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chefling;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1596253A223A76ED00AB6622 /* Build configuration list for PBXProject "Chefling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15962568223A76F000AB6622 /* Debug */,
+				15962569223A76F000AB6622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1596256A223A76F000AB6622 /* Build configuration list for PBXNativeTarget "Chefling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1596256B223A76F000AB6622 /* Debug */,
+				1596256C223A76F000AB6622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1596256D223A76F000AB6622 /* Build configuration list for PBXNativeTarget "CheflingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1596256E223A76F000AB6622 /* Debug */,
+				1596256F223A76F000AB6622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15962570223A76F000AB6622 /* Build configuration list for PBXNativeTarget "CheflingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15962571223A76F000AB6622 /* Debug */,
+				15962572223A76F000AB6622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15962549223A76ED00AB6622 /* Chefling.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1596254A223A76ED00AB6622 /* Chefling.xcdatamodel */,
+			);
+			currentVersion = 1596254A223A76ED00AB6622 /* Chefling.xcdatamodel */;
+			path = Chefling.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 15962537223A76ED00AB6622 /* Project object */;
+}
