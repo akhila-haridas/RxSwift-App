@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156C91A8223D5B09004ED508 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C91A7223D5B09004ED508 /* NetworkReachability.swift */; };
 		15962543223A76ED00AB6622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962542223A76ED00AB6622 /* AppDelegate.swift */; };
 		15962545223A76ED00AB6622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15962544223A76ED00AB6622 /* ViewController.swift */; };
 		15962548223A76ED00AB6622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15962546223A76ED00AB6622 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		0D24ABEF44A459BA0F837678 /* Pods_Chefling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chefling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5E151976A64D11B893163 /* Pods_CheflingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheflingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		156C91A7223D5B09004ED508 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		1596253F223A76ED00AB6622 /* Chefling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chefling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15962542223A76ED00AB6622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15962544223A76ED00AB6622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1512A951223D5147002B07F7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15962544223A76ED00AB6622 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		15962536223A76ED00AB6622 = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +161,7 @@
 				15962578223A7DDF00AB6622 /* Image */,
 				15962573223A779400AB6622 /* Xib */,
 				15962542223A76ED00AB6622 /* AppDelegate.swift */,
-				15962544223A76ED00AB6622 /* ViewController.swift */,
+				1512A951223D5147002B07F7 /* ViewController */,
 				15962546223A76ED00AB6622 /* Main.storyboard */,
 				1596254C223A76EF00AB6622 /* Assets.xcassets */,
 				1596254E223A76EF00AB6622 /* LaunchScreen.storyboard */,
@@ -236,6 +246,7 @@
 			children = (
 				1596258E223B9E6B00AB6622 /* Utils.swift */,
 				1596259D223BD9CC00AB6622 /* Constants.swift */,
+				156C91A7223D5B09004ED508 /* NetworkReachability.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -517,6 +528,7 @@
 				15962583223B61C300AB6622 /* IngredientsTableViewCell.swift in Sources */,
 				1596259E223BD9CC00AB6622 /* Constants.swift in Sources */,
 				15962592223BA81A00AB6622 /* Extensions.swift in Sources */,
+				156C91A8223D5B09004ED508 /* NetworkReachability.swift in Sources */,
 				1596258F223B9E6B00AB6622 /* Utils.swift in Sources */,
 				15962586223B629300AB6622 /* IngredientCellViewModel.swift in Sources */,
 				1596257D223ABB4800AB6622 /* Models.swift in Sources */,

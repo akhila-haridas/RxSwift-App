@@ -12,10 +12,6 @@ import RxCocoa
 class IngredientsTableViewModel {
     
     var ingredientCells = BehaviorRelay<[IngredientCellViewModel]>(value: [])
-//    var ingredientCells: Observable<[IngredientCellViewModel]> {
-//        return cells.asObservable()
-//    }
-    private let cells = BehaviorRelay<[IngredientCellViewModel]>(value: [])
     
     var ingredients: [Ingredient]? {
         didSet {
@@ -23,4 +19,6 @@ class IngredientsTableViewModel {
             }))!)
         }
     }
+    
+    
 }

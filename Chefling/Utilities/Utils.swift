@@ -19,5 +19,5 @@ class Utils {
         view?.layer.borderColor = color?.cgColor
     }
     
-    var screenWidth: CGFloat = UIScreen.main.bounds.width
+    
 }

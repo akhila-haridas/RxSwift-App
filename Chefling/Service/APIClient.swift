@@ -22,9 +22,7 @@ class APIClient {
                     switch response.result {
                     case .success:
                         guard let data = response.data else {
-                            // if no error provided by alamofire return .notFound error instead.
-                            // .notFound should never happen here?
-                           // observer.onError(response.error ?? GetFriendsFailureReason.notFound)
+                            
                             return
                         }
                         do {
@@ -35,7 +33,7 @@ class APIClient {
                         }
                     case .failure(let error):
                         if let statusCode = response.response?.statusCode
-                           // let reason = GetFriendsFailureReason(rawValue: statusCode)
+                           
                         {
                             observer.onError(error)
                         }

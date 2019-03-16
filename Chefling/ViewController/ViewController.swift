@@ -10,11 +10,14 @@ import UIKit
 import RxSwift
 import SDWebImage
 
+
 class ViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView?
     @IBOutlet weak var btnDirections: UIButton?
     @IBOutlet weak var lblLikes: UILabel?
     @IBOutlet weak var activityLoader: UIActivityIndicatorView?
+    @IBOutlet weak var noDataView: UIView?
+    @IBOutlet weak var lblError: UILabel?
     var headerView: RecipeHeaderView?
     var footerView: RecipeFooterView?
     let imageView = UIImageView()
@@ -23,8 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        headerView = RecipeHeaderView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: kHeaderViewHeight))
-        footerView = RecipeFooterView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: kFooterHeight))
+        headerView = RecipeHeaderView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kHeaderViewHeight))
+        footerView = RecipeFooterView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kFooterHeight))
         setNavBar()
         setTableView()
         setHeaderImageView()
@@ -42,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     func setTableView() {
         tableView?.estimatedRowHeight = UITableView.automaticDimension
         tableView?.tableHeaderView = nil
-        tableView?.contentInset = UIEdgeInsets(top: 300, left: 0, bottom: 0, right: 0)
+        tableView?.contentInset = UIEdgeInsets(top: kImageHeight, left: 0, bottom: 0, right: 0)
         tableView?.tableHeaderView = headerView
         tableView?.addSubview(headerView!)
         tableView?.tableFooterView = nil
@@ -52,7 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
     
     func setHeaderImageView() {
-        imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 300)
+        imageView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kImageHeight)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         view.addSubview(imageView)
@@ -65,7 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let y = 300 - (scrollView.contentOffset.y + 300)
+        let y = kImageHeight - (scrollView.contentOffset.y + kImageHeight)
         if y <= 64 {
             self.navigationController?.navigationBar.backgroundColor = UIColor.navBarDefault()
             self.navigationController?.navigationBar.tintColor = UIColor.black
@@ -94,27 +97,35 @@ class ViewController: UIViewController, UITableViewDelegate {
 
     
     func getApiResponse() {
-        activityLoader?.startAnimating()
-        APIClient.sharedInstance.getResponse().subscribe(onNext: { (responseData) in
-            self.activityLoader?.stopAnimating()
-            let ingredients = responseData.data.ingredients
-            if ingredients.count > 0 {
-                self.tableViewModel.ingredients = ingredients
+        if !NetworkReachability.isReachable{
+           lblError?.text = kNoInternetMessage
+        } else {
+            activityLoader?.startAnimating()
+            APIClient.sharedInstance.getResponse().subscribe(onNext: { (responseData) in
+                self.activityLoader?.stopAnimating()
+                self.noDataView?.isHidden = true
+                let ingredients = responseData.data.ingredients
+                if ingredients.count > 0 {
+                    self.tableViewModel.ingredients = ingredients
+                }
+                self.headerView?.recipeData = responseData.data
+                if let images = responseData.data.images as? [Image] {
+                    let image = images[0]
+                    self.imageView.sd_setImage(with: URL(string: image.url), placeholderImage: nil)
+                }
+                self.lblLikes?.text = "\(responseData.data.totoalLikes)"
+            }, onError: { (error) in
+                print(error.localizedDescription)
+                self.lblError?.text = kErrorMessage
+            }, onCompleted: {
+                //do nothing
+            }) {
+                //on dispose
             }
-            self.headerView?.recipeData = responseData.data
-            if let images = responseData.data.images as? [Image] {
-                let image = images[0]
-                self.imageView.sd_setImage(with: URL(string: image.url), placeholderImage: nil)
-            }
-            self.lblLikes?.text = "\(responseData.data.totoalLikes)"
-        }, onError: { (error) in
-            print(error.localizedDescription)
-        }, onCompleted: {
-            //do nothing
-        }) {
-            //on dispose
         }
     }
+    
+    
 
 }
 
